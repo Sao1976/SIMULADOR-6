@@ -1,7 +1,7 @@
 Modelagem de Objetos e Design Orientado a Objetos
-Sejam bem-vindos ao Simulator - Nível #6! Neste nível, você teve a oportunidade de aprender
-conceitos sobre programação orientada a objetos. Vamos avaliar esse conhecimento.
-1. Identificação de atributos e métodos
+Sejam bem-vindos ao Simulator - Nivel #6! Neste n‚Äôvel, voc¬ê teve a oportunidade de aprender
+conceitos sobre programa¬ç‚Äπo orientada a objetos. Vamos avaliar esse conhecimento.
+1. Identifica¬ç‚Äπo de atributos e m≈Ωtodos
 
 class_name Enemy
 var health: int
@@ -10,39 +10,41 @@ var direction: String
 func move():
 print("Movendo...")
 func jump():
-print("Pulando…”)==
-Pergunta: Quais são os atributos e quais são os métodos da classe?
+print("Pulando√â√ì)==
+Pergunta: Quais s‚Äπo os atributos e quais s‚Äπo os metodos da classe?
 
 A: health, velocity, direction
 M: jump, move
 
-2. Múltipla escolha – conceito de classe
-Pergunta: O que é uma classe em programação orientada a objetos?
-A) Um valor armazenado na memória
-B) Um modelo que define atributos e comportamentos (X resposta)
-C) Um tipo de variável
-D) Um comando de repetição
+2. M≈ìltipla escolha √ê conceito de classe
+Pergunta: O que ≈Ω uma classe em programa¬ç‚Äπo orientada a objetos?
+A) Um valor armazenado na mem‚Äîria
+B) Um modelo que define atributos e comportamentos
+C) Um tipo de vari‚Ä°vel
+D) Um comando de repeti
 
-3. Análise de acesso
+R: letra (B)
+
+3. An‚Ä°lise de acesso
 class_name Enemy
 var health: int = 100
 var e1 = Enemy.new()
 var e2 = Enemy.new()
 e1.health = 50
-Pergunta: Qual será o valor de e2.health? Explique.
+Pergunta: Qual ser‚Ä° o valor de e2.health? Explique.
 
-R:  O valor de e2.health será 100!Isso acontece porque são instâncias distintas mas criado da mesma classe 
+R:  O valor de e2.health ser‚Ä° 100!Isso acontece porque s‚Äπo inst‚Ä∞ncias distintas mas criado da mesma classe 
 
-4. Análise de acesso
+4. An‚Ä°lise de acesso
 class_name Enemy
 var _health: int = 100
 var e = Enemy.new()
 e._health = 50
-Pergunta: Qual será o valor de e._health? Explique.
+Pergunta: Qual ser‚Ä° o valor de e._health? Explique.
 
-R: O valor será 50 pois foi modificado a variável Health (100) para 50 nessa instancia
+R: O valor ser‚Ä° 50 pois foi modificado a vari‚Ä°vel Health (100) para 50 nessa instancia
 
-5. Associação de conceito
+5. Associa¬ç‚Äπo de conceito
 class_name Enemy
 var health: int = 100
 func display():
@@ -54,9 +56,9 @@ var boss = BossEnemy.new()
 boss.display()
 Pergunta: Por que boss consegue chamar display()?
 
-R: Porque boss herda a classe inimigo que tem esse método
+R: Porque boss herda a classe inimigo que tem esse m≈Ωtodo
 
-6. Associação de conceito
+6. Associa¬ç‚Äπo de conceito
 class_name Enemy
 func move():
 print("Movendo")
@@ -66,18 +68,18 @@ func move():
 print("Pulando")
 var e: Enemy = JumpingEnemy.new()
 e.move()
-Pergunta: O que será exibido ao executar e.move()?
+Pergunta: O que ser‚Ä° exibido ao executar e.move()?
 
-R: Será pulando pois foi modificado quando criado a instancia baseada na classe enemy
+R: Ser‚Ä° pulando pois foi modificado quando criado a instancia baseada na classe enemy
 
 7. Verdadeiro ou Falso
-(V ) Métodos podem alterar atributos
-( F) Métodos não podem receber parâmetros
-( V) Métodos representam comportamentos
+(V ) M≈Ωtodos podem alterar atributos
+( F) M≈Ωtodos n‚Äπo podem receber par‚Ä∞metros
+( V) M≈Ωtodos representam comportamentos
 
-8. Diferença entre objetos
+8. Diferen¬ça entre objetos
 var e1 = Enemy.new()
 var e2 = Enemy.new()
-Pergunta: e1 e e2 são o mesmo objeto? Explique.
+Pergunta: e1 e e2 s‚Äπo o mesmo objeto? Explique.
 
-R: são instancias diferentes do mesmo objeto (herdando deles)
+R: s‚Äπo instancias diferentes do mesmo objeto (herdando deles)
